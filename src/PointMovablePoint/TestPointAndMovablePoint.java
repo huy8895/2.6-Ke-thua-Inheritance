@@ -5,13 +5,23 @@ public class TestPointAndMovablePoint {
         Point point = new Point();
         System.out.println(point);
 
-        point = new Point(1.0f,2.0f);
+        point = new Point(1.0f, 2.0f);
         System.out.println(point);
 
+        System.out.println("Test MovablePoint:");
         MovablePoint movablePoint = new MovablePoint();
         System.out.println(movablePoint);
 
-        movablePoint = new MovablePoint(3.0f,4.0f,5.0f,6.0f);
+        System.out.println("Before move: ");
+
+        movablePoint = new MovablePoint(3.0f, 4.0f, 5.0f, 6.0f);
         System.out.println(movablePoint);
+
+        movablePoint.move();
+
+        System.out.println("After move: ");
+        System.out.println(movablePoint);
+
+
     }
 }
